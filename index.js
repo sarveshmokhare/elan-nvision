@@ -83,3 +83,21 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+
+  function reveal2() {
+    var reveals = document.querySelectorAll(".reveal2");
+  
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[0].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[0].classList.add("active");
+      } else {
+        reveals[0].classList.remove("active");
+    
+    }
+  }
+  
+  window.addEventListener("scroll", reveal2);

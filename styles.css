@@ -141,11 +141,14 @@ html, body {
   padding: 0 30px;
 }
 #caption p{
-  font-size: 3rem; 
+  font-family: Garamond, serif;
+
+  font-size: 3.5rem; 
 }
 @media(max-width:768px){
   #caption p{
-    font-size: 2rem;
+
+    font-size: 2.5rem;
   }
 }
 
@@ -295,7 +298,7 @@ width: 7rem;
 
 .reveal{
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(130px);
   opacity: 0;
   transition: 1s all ease;
 }
@@ -305,10 +308,24 @@ width: 7rem;
   opacity: 1;
 }
 
+.reveal2{
+  position: relative;
+  transform: translateX(200px);
+  opacity: 0;
+  transition: 1s all ease;
+
+}
+
+.reveal2.active{
+  transform: translateX(0);
+  opacity: 1;
+}
 
 
+ .carousel-item{
+  transition: 1s all ease;
 
-
+}
 
 
 
@@ -330,6 +347,7 @@ width: 7rem;
   }
 }
 
+
 #sponsor h1 {
   font-family: "Righteous", cursive;
   font-size: 4rem;
@@ -350,9 +368,35 @@ width: 7rem;
   }
 }
 
+#sponsor .carousel-control-prev-icon{
+  position:relative;
+  right: 7rem;
+}
+@media(max-width:992px){
+  #sponsor .carousel-control-prev-icon{
+    position: relative;
+    right: 0;
+  }
+}
 
+#sponsor .carousel-control-next-icon{
+  position: relative;
+left: 7rem;
+}
+@media(max-width:992px){
+  #sponsor .carousel-control-next-icon{
+    position: relative;
+    left: 0;
+  }
+}
 
+#sponsor .carousel-control-next,#sponsor .carousel-control-prev:hover{
+  cursor:default
+}
 
 .fa-angle-down{
   margin: auto;
 }
+
+
+
