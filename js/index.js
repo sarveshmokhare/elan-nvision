@@ -32,10 +32,22 @@ for (let index = 0; index < statsArray.length; index++) {
             let currentStatNumber = currentStat.replace("+", "");
 
             let time = 0;
-            currentStatNumber <= 2000 ? time = 5 : time = 1;
+            currentStatNumber <= 5000 ? time = 5 : time = 1;
             
             let interval = setInterval(() => {
-                currentStatNumber <= 2000 ? i +=1 : i += 20;
+              if (currentStatNumber <= 5000) {
+                i += 20;
+              }
+              if (currentStatNumber >= 5000 && currentStatNumber <= 20000) {
+                i += 25;
+              }
+              if (currentStatNumber >= 20000 && currentStatNumber <= 50000) {
+                i += 50;
+              }
+              if (currentStatNumber >= 50000) {
+                i += 80;
+              }
+                // currentStatNumber <= 5000 ? i +=1 : i += 20;
                 if (i > currentStatNumber) {
                     clearInterval(interval);
                 } else {

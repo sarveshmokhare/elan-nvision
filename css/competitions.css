@@ -95,11 +95,9 @@ body {
 
 #culti.active{
   animation: comeinright 2s ease;
-  width: 100vw;
   padding-bottom: 3rem;
 }
 #techy.active{
-  width: 100vw;
   padding-bottom: 3rem;
 }
 .row.active{
@@ -116,6 +114,9 @@ body {
 }
 
 /* footer */
+#footer{
+  z-index: -100;
+}
 
 #footer .row {
 
@@ -133,11 +134,11 @@ body {
   #main_heading{
     font-size: 2.5rem;
   }
-  #culti.row.active{
+  /* #culti.row.active{
     width: 100vw;
-  }
+  } */
   #culti.active{
-    width: 100vw;
+    width: 104vw;
     z-index: 1;
     display: flex;
     animation: comeinright2 2s ease;
@@ -245,7 +246,7 @@ body {
   width: 70vw;
   max-width: 900px;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
   margin-top: 1rem;
   margin-bottom: 4rem;
   max-height: 450px;

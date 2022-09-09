@@ -195,21 +195,31 @@ iframe{
   font-size: 1.25rem;
 }
 #section4 i{
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 10px;
+}
+.stat{
+  font-size: 2rem;
+}
+@media(max-width:992px) {
+  #section4 i{
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+  }
+  .stat{
+    font-size: 1.5rem;
+  }
+  #section4 .col{
+    margin-bottom: 20px;
+  }
 }
 #section4 p{
   margin: 0;
   text-align: center;
 }
-.stat{
-  font-size: 2.5rem;
-}
 #section .col{
   text-align: center;
 }
-
-
 
 
 #footer .footer-logo {
