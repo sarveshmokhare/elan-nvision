@@ -41,6 +41,7 @@ body {
 /* team section*/
 
 #team_section {
+    /* width: 100vw; */
     background-color: #101820FF;
     background-size: cover;
     height: auto;
@@ -63,9 +64,10 @@ body {
     color: white;
 
 }
-#team_section h5{
+
+#team_section h5 {
     /* position: absolute; */
-    
+
     font-weight: bold;
 }
 
@@ -92,11 +94,13 @@ body {
     height: 350px;
     object-fit: cover;
 }
+
 @media (max-width: 992px) {
+
     /* #team_section {
         height: 2400px;
     } */
-    #team_section .card{
+    #team_section .card {
         width: 12rem !important;
     }
 
@@ -107,10 +111,12 @@ body {
     #team_section .title1 {
         font-size: 2rem;
     }
+
     .heads img {
         height: 200px;
     }
-    #team_section .heads{
+
+    #team_section .heads {
         margin-top: 100px;
         padding: 0px;
     }
@@ -118,6 +124,7 @@ body {
 }
 
 #coord {
+    /* width: 100vw; */
     background-color: #DDC3A5;
     background-size: cover;
     height: auto;
@@ -158,14 +165,101 @@ body {
     display: flex;
     justify-content: center;
 }
-@media (max-width:992px){
+
+@media (max-width:992px) {
     #coord .coords {
 
         padding: 7px 30px;
-    
+
     }
+
     /* #coord{
         height: 3150px;
     } */
 
+}
+
+/* hover effect to see data  */
+#heads .socialmedia-icons {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.head_image .data {
+    /* background-color: rgba(19, 30, 33, 0.4); */
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.head_image:hover .data {
+    background-color: rgba(19, 30, 33, 0.4);
+}
+
+ .head_image .number {
+    position: absolute;
+    padding: 7px;
+    z-index: 1000;
+    top: 60%;
+    left: -80%;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 13px;
+    width: 80%;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+ .head_image:hover .number {
+    background-color: #1e4944;
+    left: 0px;
+    opacity: 1;}
+
+ .head_image .social_id {
+    position: absolute;
+    justify-content: center;
+    padding: 3px;
+    z-index: 1000;
+    top: 61%;
+    right: -85%;
+    margin-top: 25px;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: 80%;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+ .head_image:hover .social_id {
+    background-color: #417c74;
+    right: 0px;
+    opacity: 1;
+}
+.mob_data{
+    display: none;
+}
+@media (max-width:992px){
+    .mob_data{
+        display: block;
+    }
+    .socialmedia-icons{
+        color: #000;
+    }
+    .head_image .number{
+        top: 40%;
+    }
+    .head_image .social_id{
+        top: 41%;
+    }
 }

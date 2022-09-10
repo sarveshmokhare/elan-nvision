@@ -27,8 +27,8 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img class="logo" src="images/elan_logo.png" alt="elan_logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" onclick="on_off()">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation" onclick="on_off()">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="nav-item hover-underline-animation">
-                        <a class="nav-link " href="./events.html" aria-expanded="false">
+                        <a class="nav-link " href="./event.html" aria-expanded="false">
                             Events
                         </a>
                     </li>
@@ -64,7 +64,7 @@
         </div>
     </nav>
     <div id="body">
-        <div>
+       
             <ul id="vert-navbar">
                 <button id="home_btn" onclick="slide('home')">Home</button>
                 <button id="pronites_btn" onclick="slide('pronites')">Pronites</button>
@@ -74,11 +74,11 @@
 
 
             </ul>
-        </div>
+        
 
-        <div id="home" class="home events container">
+        <div id="home" class="home events container-fluid">
             <div id="main_heading">EVENTS</div>
-            <div id="event_carousel" class="container carousel slide  " data-bs-ride="carousel">
+            <div id="event_carousel" class=" carousel slide other" data-bs-ride="carousel">
 
 
 
@@ -158,7 +158,7 @@
 
                 </div>
                 <div class="col-md-6">
-                <div id="pronites_carousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="pronites_carousel" class="carousel slide other" data-bs-ride="carousel">
 
 
                     <div class="carousel-indicators">
@@ -206,21 +206,9 @@
                     audience with an ensemble of out-of-this-world performances and provide a stage for continuous and
                     maximum visibility. This involves organizing a variety of cultural events where participants
                     showcase their talents like
-                    <ul>
-                        <li>Glitz and Glamour
-                        </li>
-                        <li>Campus Idol
-                        </li>
-                        <li>Doodle creation
-                        </li>
-                        <li>Art attack
-                        </li>
-                        <li>Standup comedy</li>
-                    </ul>
-
                 </div>
                 <div class="col-md-6">
-                <div id="culti_carousel" class=" carousel slide " data-bs-ride="carousel">
+                <div id="culti_carousel" class=" carousel slide other" data-bs-ride="carousel">
 
 
                     <div class="carousel-indicators">
@@ -265,15 +253,10 @@
             <div class="full_content row">
                 <div class="content col-md-6">From Hackathons to designing a CAD model, we have it all! App Development:
                     Use your creativity to innovate an intriguing application for mobile platforms.
-                    <ul>
-                        <li>CAD pro</li>
-                        <li>App Development</li>
-                        <li>Capture The Flag</li>
-                        <li>Shark Tank</li>
-                    </ul>
+                   
                 </div>
                 <div class="col-md-6">
-                <div id="techy_carousel" class=" carousel slide" data-bs-ride="carousel">
+                <div id="techy_carousel" class=" carousel slide other" data-bs-ride="carousel">
 
 
                     <div class="carousel-indicators">
@@ -319,8 +302,7 @@
                 <div class="content col-md-6">Workshops are an essential part of our fest. They are intended for
                     hands-on experiential learning. 
                     <br>
-            Students will learn and discover many new things that cannot be
-                    taught theoretically.
+            
                     Our workshops are designed and planned in such a way that they improve students' critical thinking
                     skills.
                     <ul>
@@ -328,14 +310,11 @@
                             Ethical hacking and cyber security
                         </li>
                         <li>Facial and emotional recognition with deep learning</li>
-                        <li>Introduction to computer-aided engineering </li>
-                        <li>
-                            Website Design development workshop
-                        </li>
+                    
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <div id="workshop_carousel" class=" carousel slide" data-bs-ride="carousel">
+                    <div id="workshop_carousel" class=" carousel slide other" data-bs-ride="carousel">
 
 
                         <div class="carousel-indicators">
@@ -448,5 +427,7 @@
 
 <!-- javascript -->
 <script src="./js/event.js"></script>
+<script src="./js/index.js"></script>
+
 
 </html>

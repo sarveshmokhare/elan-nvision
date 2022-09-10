@@ -29,31 +29,39 @@ for (let index = 0; index < statsArray.length; index++) {
         if (scrollY > section4Distance) {
             let i = 0;
             let currentStat = statsArray[index].innerHTML;
-            let currentStatNumber = currentStat.replace("+", "");
+            let currentStatNumber = parseInt(currentStat.replace("+", ""));
 
             let time = 0;
             currentStatNumber <= 5000 ? time = 5 : time = 1;
+
+            t=5000/currentStatNumber
             
             let interval = setInterval(() => {
-              if (currentStatNumber <= 5000) {
-                i += 20;
-              }
-              if (currentStatNumber >= 5000 && currentStatNumber <= 20000) {
-                i += 25;
-              }
-              if (currentStatNumber >= 20000 && currentStatNumber <= 50000) {
-                i += 50;
-              }
-              if (currentStatNumber >= 50000) {
-                i += 80;
-              }
+              // if (currentStatNumber <= 5000) {
+              //   i += 20;
+              // }
+              // if (currentStatNumber >= 5000 && currentStatNumber <= 20000) {
+              //   i += 25;
+              // }
+              // if (currentStatNumber >= 20000 && currentStatNumber <= 50000) {
+              //   i += 50;
+              // }
+              // if (currentStatNumber >= 50000) {
+              //   i += 80;
+              // }
+              
+              if(i<currentStatNumber) i+=Math.floor(Math.floor(currentStatNumber/10)/10)
+
                 // currentStatNumber <= 5000 ? i +=1 : i += 20;
                 if (i > currentStatNumber) {
+                  i=currentStatNumber
+                  statsArray[index].innerHTML = i + "+";
                     clearInterval(interval);
                 } else {
+                  
                     statsArray[index].innerHTML = i + "+";
                 }
-            }, time);
+        },10);
 
             window.removeEventListener("scroll", increaseStats);
         }
