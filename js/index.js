@@ -78,6 +78,7 @@ for (let index = 2; index < statsArray.length; index++) {
                     clearInterval(interval);
                 } else {
                   if(i === 4) statsArray[index].innerHTML = i + ".4k+";
+                  if(i === 5) statsArray[index].innerHTML = i + ".1k+";
                     statsArray[index].innerHTML = i + "k+";
                 }
             }, time);

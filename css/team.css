@@ -92,6 +92,10 @@ body {
   transform: translateX(200px);
   opacity: 0;
   transition: 1s all ease;
+  position: relative;
+  transform: translateX(200px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 
 /* team section*/
