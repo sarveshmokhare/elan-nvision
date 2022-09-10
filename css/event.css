@@ -429,3 +429,82 @@ width: 7rem;
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+/* navbar cross functionality */
+.navbar-toggler {
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #808080;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 10px;
+  transform: rotate(0deg);
+  width: 65%;
+  left: 9px;
+  border-radius: 10px;
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  filter: alpha(opacity=100);
+  width: 65%;
+  left: 9px;
+  border-radius: 10px;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 28px;
+  transform: rotate(0deg);
+  width: 65%;
+  left: 9px;
+  border-radius: 10px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+  top: inherit;
+  left: 8px;
+  transform: rotate(135deg);
+  width: 70%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  top: inherit;
+  left: 8px;
+  transform: rotate(-135deg);
+  width: 70%;
+}
+
+.ms-auto{
+  text-align: center;
+}

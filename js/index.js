@@ -23,35 +23,62 @@ let statsArray = document.getElementsByClassName("stat");
 
 let section4Distance = section4.getBoundingClientRect().top;
 
-for (let index = 0; index < statsArray.length; index++) {
+for (let index = 0; index < 2; index++) {
     window.addEventListener("scroll", increaseStats)
     function increaseStats() {
         if (scrollY > section4Distance) {
             let i = 0;
             let currentStat = statsArray[index].innerHTML;
             let currentStatNumber = currentStat.replace("+", "");
-
-            let time = 0;
-            currentStatNumber <= 5000 ? time = 5 : time = 1;
+            // console.log(currentStatNumber);
+            let time = 10;
+            // currentStatNumber <= 5000 ? time = 5 : time = 1;
             
             let interval = setInterval(() => {
-              if (currentStatNumber <= 5000) {
-                i += 20;
-              }
-              if (currentStatNumber >= 5000 && currentStatNumber <= 20000) {
-                i += 25;
-              }
-              if (currentStatNumber >= 20000 && currentStatNumber <= 50000) {
-                i += 50;
-              }
-              if (currentStatNumber >= 50000) {
-                i += 80;
-              }
-                // currentStatNumber <= 5000 ? i +=1 : i += 20;
+                i += 1;
                 if (i > currentStatNumber) {
                     clearInterval(interval);
                 } else {
                     statsArray[index].innerHTML = i + "+";
+                }
+            }, time);
+
+            window.removeEventListener("scroll", increaseStats);
+        }
+    }
+}
+for (let index = 2; index < statsArray.length; index++) {
+    window.addEventListener("scroll", increaseStats)
+    function increaseStats() {
+        if (scrollY > section4Distance) {
+            let i = 0;
+            let currentStat = statsArray[index].innerHTML;
+            let currentStatNumber = currentStat.replace("k+", "");
+            // console.log(currentStatNumber);
+            let time = 40;
+            // currentStatNumber <= 5000 ? time = 5 : time = 1;
+            
+            let interval = setInterval(() => {
+              // if (currentStatNumber <= 5000) {
+              //   i += 1;
+              // }
+              // if (currentStatNumber >= 5000 && currentStatNumber <= 20000) {
+              //   i += 25;
+              // }
+              // if (currentStatNumber >= 20000 && currentStatNumber <= 50000) {
+              //   i += 50;
+              // }
+              // if (currentStatNumber >= 50000) {
+              //   i += 80;
+              // }
+                // currentStatNumber <= 5000 ? i +=1 : i += 20;
+
+                i += 1;
+                if (i > currentStatNumber) {
+                    clearInterval(interval);
+                } else {
+                  if(i === 4) statsArray[index].innerHTML = i + ".4k+";
+                    statsArray[index].innerHTML = i + "k+";
                 }
             }, time);
 
