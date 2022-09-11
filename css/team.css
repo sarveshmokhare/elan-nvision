@@ -182,6 +182,12 @@ body {
     font-size: 2rem;
     color: #fff;
 }
+.head_image {
+    display: table-cell;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
 
 .head_image .data {
     /* background-color: rgba(19, 30, 33, 0.4); */
