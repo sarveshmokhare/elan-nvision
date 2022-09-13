@@ -14,14 +14,14 @@ body{
   /* overflow-x: hidden; */
   /* background-image: url("./events.jfif"); */
   background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+/* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
 
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 #body{
-  /* width: 100vw; */
+  background-color: #2591b1;
   text-align: center;
 }
 .carousel-item{
@@ -39,19 +39,9 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     margin-right: 25px;
 }
 
-#vert-navbar button{
-  border-radius: 5px;
-    margin-bottom: 0;
-    border: none;
-    font-size: 1.5rem;
-    display: inline-block;
-    width: 8rem;
-    height: 2rem;
-    overflow-y: hidden;
-}
 #main_heading{
   font-family: "LemonMilk";
-  color: #212529;
+  color: #ffffff;
   font-size: 7rem;
   padding:0;
   margin: 0;
@@ -64,18 +54,21 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     /* padding: 0 10px; */
 }
 .heading{
+  color: white;
     font-size: 5rem;
     margin-bottom: 2rem;
 }
 
 .content{
+  font-weight: 500;
+  color: white;
     max-width: 95vw;
     width: 40vw;
     text-align: left;
     font-size: 1.4rem;
     vertical-align: middle;
     align-items: center;
-
+  
 
 }
 
@@ -132,28 +125,36 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     }
 }
 @media(max-width:480px){
-  #vert-navbar button{
-    font-size: .7rem;
-    width: 8rem;
-  }
+  /* #vert-navbar button{ */
+    /* font-size: .7rem; */
+    /* width: 8rem; */
+  /* } */
 
   .events{
     padding: 0 20px;
   }
 
 }
+.navbar2 button{
+  /* margin: .5rem; */
+  margin-right: 1rem;
+  margin-bottom: .25rem;
+  margin-top: .25rem;
+
+}
 .events.active{
+  opacity: 1;
     display: block;
-    animation: comein 2s ease;
+    animation: comein 2s ease-in-out;
 }
 .events.inactive{
     display: block;
-    animation:getout 2s ease ;
+    animation:getout 2s ease-in ;
 }
 
 @keyframes comein {
-    from{top: 0px;left:100vw ;display: none;}
-    to {top: 0px;left: 0px;display: block;}
+    from{top: 0px;left:50vw ;opacity: 0;}
+    to {top: 0px;left: 0px;opacity: 1;}
 }
 @keyframes getout{
     from{top: 0px;left:0vw ;display: block;}
@@ -245,9 +246,9 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 
 
-#vert-navbar button:hover {
-  box-shadow: rgba(184, 202, 191, 0.35) 0 -25px 18px -14px inset,rgba(98, 134, 112, 0.25) 0 1px 2px,rgba(115, 160, 132, 0.25) 0 2px 4px,rgba(112, 161, 131, 0.25) 0 4px 8px,rgba(126, 172, 144, 0.25) 0 8px 16px,rgba(114, 167, 135, 0.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
+.navbar button:hover {
+  box-shadow: rgba(103, 103, 103, 0.35) 0 -20px 18px -14px inset,rgba(10, 36, 20, 0.25) 0 1px 2px,rgba(8, 24, 14, 0.25) 0 2px 4px,rgba(3, 23, 11, 0.25) 0 4px 8px,rgba(1, 18, 8, 0.25) 0 8px 10px,rgba(9, 41, 22, 0.25) 0 10px 20px;
+  /* transform: scale(1.05) rotate(-1deg); */
 }
 
 

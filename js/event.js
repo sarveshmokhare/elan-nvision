@@ -16,14 +16,14 @@ function slide1() {
     if (!techy.classList.contains("active")) {
         if (!culti.classList.contains("active")) {
             culti.classList.add("active")
-            document.getElementById("techy_btn").style.zIndex = -1
+            // document.getElementById("techy_btn").style.zIndex = -1
             document.getElementById("main_page").classList.add("inactive")
             document.getElementById("image_carousel").style.zIndex = -1;
             document.getElementById("culti_btn").classList.add("active")
         }
         else {
             culti.classList.remove("active")
-            document.getElementById("techy_btn").style.zIndex = 10
+            // document.getElementById("techy_btn").style.zIndex = 10
             document.getElementById("main_page").classList.remove("inactive")
             document.getElementById("image_carousel").style.zIndex = 0;
             document.getElementById("culti_btn").classList.remove("active")
@@ -38,16 +38,24 @@ function slide2() {
     if (!culti.classList.contains("active")) {
         if (!techy.classList.contains("active")) {
             techy.classList.add("active")
-            document.getElementById("culti_btn").style.zIndex = -1
-            document.getElementById("main_page").classList.add("inactive")
-            document.getElementById("image_carousel").style.zIndex = -1;
+            // document.getElementById("culti_btn").style.zIndex = -1
+            // document.getElementById("main_page").classList.add("inactive")
+            document.getElementById("image_carousel").style.zIndex = 0;
         }
         else {
             techy.classList.remove("active")
-            document.getElementById("culti_btn").style.zIndex = 10
-            document.getElementById("main_page").classList.remove("inactive")
+            // document.getElementById("culti_btn").style.zIndex = 10
+            // document.getElementById("main_page").classList.remove("inactive")
             document.getElementById("image_carousel").style.zIndex = 0;
         }
     }
 }
 // document.getElementById("vert-navbar").style.width=document.body.clientWidth
+
+function home(){
+    techy = document.getElementById("techy")
+    culti = document.getElementById("culti")
+    if (techy.classList.contains("active"))techy.classList.remove("active")
+    if (culti.classList.contains("active"))culti.classList.remove("active")
+    document.getElementById("image_carousel").style.zIndex = 0;
+}

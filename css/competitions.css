@@ -3,22 +3,44 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-
-body {
-  /* width: 100vw; */
-  overflow-x: hidden;
-  background-color: #FBDA61;
-  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  text-align: center;
+#for_backcol{
+  background-color: #2cb7da;
 }
 
+:root {
+  --main-bg-color: #f7b219;
+}
+/* #buttons{
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  height: 2rem;
+} */
+
+body {
+  background-color: var(--main-bg-color);
+  overflow-x: hidden;
+  /* background-color: #FF5ACD; */
+  /* background-color: #FBDA61; */
+  /* background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
+
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  text-align: center;
+}
+#image_carousel{
+  z-index: 0;
+  max-width: 900px;
+  width: 80vw;
+  height:40vw ;
+  overflow: hidden;
+  max-height: 450px;  
+  margin-bottom: 5rem;
+}
 
 #main_heading {
-
+  /* margin-top: 2rem; */
   font-family: "LemonMilk";
 
   text-align: center;
@@ -32,6 +54,7 @@ body {
 }
 
 .heading {
+  color: white;
   font-family: 'Tiro Bangla', serif;
   text-align: center;
   font-size: 2rem;
@@ -39,16 +62,14 @@ body {
 }
 
 .content {
+  color: white;
   font-size: 1rem;
   margin-top: 1rem;
 }
 
 @media(min-width:768px){
 
-  #culti_btn{
-    position: fixed;
-    right: 0;
-  }
+
 
 #culti.active{
   animation: comeinright 2s ease;
@@ -56,6 +77,7 @@ body {
   display: flex;
 }
 #techy.active{
+  z-index: 5;
   display: flex;
   animation: comeinleft 2s ease;
 }
@@ -67,15 +89,21 @@ body {
   padding: 0 4rem;
   display: block;
 }
+
+#main_page{
+  background-color: #2cb7da;
+
+}
 #whole_content{
   overflow: hidden;
-  height: 95%;
-  padding: 1rem;
+  height: 90%;
+  padding: 3rem;
+  padding-bottom: 5rem;
   border-radius: 20px;
-  background-color: #3097b4;
-  margin:.5rem;
-  border:#000 solid;
+  background-color: #1e1e65;
+  margin:1rem;
 }
+
 #whole img{
   display: block;
   width: 18rem;
@@ -92,6 +120,7 @@ body {
   #whole_content{
     height: auto;
   }
+
 }
 
 
@@ -145,79 +174,94 @@ body {
   .main_heading2{
     font-size: 2.5rem;
   }
-  #culti_btn{
-    position: fixed;
-    right: 0px;
-  }
+
 }
 
 
 
 
 
+.navbar{
+  position: sticky;
+  top: 0;
+}
 
-
-
+.navbar2 .container-fluid{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 #culti_btn{
-    top:40vh;
-    font-size: 1.2rem;
-  line-height: 20px;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 900;
+    background-color:#202c6a;
     z-index: 10;
-    width: 2rem;
-    background-color:#199dc2;
-    /* background-color:#f02b8d; */
-  height: 7rem;
-  border: none;
+    width: 20vw;
+    min-width: 80px;
+    /* position: sticky; */
+    /* top: 0; */
+    /* left: 49vw; */
 }
-
 #techy_btn{
-  font-size: 1.2rem;
-  line-height: 20px;
-  border-bottom-right-radius: 1rem;
-  border-top-right-radius: 1rem;
-  position: fixed;
-  background-color:#199dc2;
-  top:40vh;
-  width: 2rem;
-  height: 7rem;
+
+  /* left: 41vw; */
+  color: aliceblue;
+  font-weight: 900;
+  width: 20vw;
+  background-color:#202c6a;
   z-index: 10;
-  border: #000;
-  /* border-right: none; */
+  min-width: 80px;
+  /* position: sticky; */
+  /* top: 0; */
+  /* right: 60vw; */
+}
+#home_btn{
+
+  /* left: 41vw; */
+  color: aliceblue;
+  font-weight: 900;
+  width: 20vw;
+  background-color:#202c6a;
+  z-index: 10;
+  min-width: 80px;
+  /* position: sticky; */
+  /* top: 0; */
+  /* right: 60vw; */
 }
 
 
 @keyframes comeinright {
-  from{top:186px;left:100vw ;display: none;}
-  to {top: 186px;left: 0px;display: flex;}
+  from{top:240px;left:100vw ;display: none;}
+  to {top: 240px;left: 0px;display: flex;}
 } 
  @keyframes comeinleft {
-  from{top:186px;right:100vw ;display: none;}
-  to {top: 186px;right: 0px;display: flex;}
+  from{top:240px;right:100vw ;display: none;}
+  to {top: 240px;right: 0px;display: flex;}
 }
 @keyframes comeinright2 {
-  from{top:126px;left:100vw ;display: none;}
-  to {top: 126px;left: 0px;display: flex;}
+  from{top:180px;left:100vw ;display: none;}
+  to {top: 180px;left: 0px;display: flex;}
 }
 @keyframes comeinleft2 {
-  from{top:126px;right:100vw ;display: none;}
-  to {top: 126px;right: 0px;display: flex;}
+  from{top:180px;right:100vw ;display: none;}
+  to {top: 180px;right: 0px;display: flex;}
 }
 #culti{
   right: 0;
   display: none;
-  background-color: #FBDA61;
-  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  background-color: #2cb7da;
+  /* background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
 }
 #techy{
-  background-color: #FBDA61;
-  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  background-color: #2cb7da;
+  /* background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -229,6 +273,7 @@ body {
   position: relative;
   display: block;
 }
+
 
 @media(max-width:480px){
   #main_page{
