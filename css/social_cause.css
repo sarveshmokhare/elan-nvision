@@ -124,14 +124,6 @@ body {
   color: #101820ff;
   font-family: "Times New Roman", Times, serif;
 }
-@media (max-width: 992px) {
-  #SocialCause h1 {
-    font-size: 5rem;
-  }
-  #SocialCause h2 {
-    font-size: 1.5rem;
-  }
-}
 /* #SocialCause .container-fluid{
    margin-top:100px ;
 } */
@@ -143,7 +135,7 @@ body {
   min-height: 200px;
   padding: 20px;
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: black;
   font-family: "sans-serif";
 }
@@ -157,7 +149,18 @@ body {
   align-items: center;
   border: 2px;
   min-height: 200px;
-  padding: 20px;
+  padding: 5px 5px 0px;
+}
+@media (max-width: 992px) {
+  #SocialCause h1 {
+    font-size: 4rem;
+  }
+  #SocialCause h2 {
+    font-size: 1.5rem;
+  }
+  .images{
+    padding: 20px;
+  }
 }
 
 /* footer  */
