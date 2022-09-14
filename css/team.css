@@ -50,14 +50,15 @@ body {
 }
 
 #team_section .card {
-    background-color: #FCE77D;
+    /* border: 10px gray !important; */
+    outline: 3px solid gray;
 }
 
 #team_section h1 {
-    padding-top: 3rem;
+    padding-top: 1rem;
     display: block;
     position: relative;
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: 'LemonMilk';
     font-weight: bolder;
     color: white;
@@ -72,8 +73,8 @@ body {
 
 .title1 {
     display: block;
-    margin-top: 60px;
-    font-size: 2.5rem;
+    margin-top: 0.25rem;
+    font-size: 2.25rem;
     color: white;
     font-weight: bold;
     font-family: 'LemonMilk';
@@ -116,14 +117,14 @@ body {
     }
 
     #team_section .heads {
-        margin-top: 100px;
+        margin-top: 55px;
         padding: 0px;
     }
 
 }
 
 #coord {
-    background-color: #DDC3A5;
+    background-color: #ffff;
     background-size: cover;
     height: auto;
     text-align: center;
@@ -132,18 +133,19 @@ body {
 }
 
 #coord .card {
-    background-color: #E0A96D !important;
+    background-color: #101820FF !important;
+    border-radius: 0%;
 }
 
 #coord .title2 {
-    padding-top: 90px;
+    padding-top: 20px;
     display: block;
     position: relative;
     /* top: 5%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    font-size: 2.5rem;
-    color: white;
+    font-size: 2.25rem;
+    color: #101820FF;
     font-weight: bold;
     font-family: 'LemonMilk';
 }
@@ -178,6 +180,7 @@ body {
 }
 
 /* hover effect to see data  */
+
 #heads .socialmedia-icons {
     font-size: 2rem;
     color: #fff;
@@ -190,7 +193,7 @@ body {
   }
 
 .head_image .data {
-    /* background-color: rgba(19, 30, 33, 0.4); */
+    
     position: absolute;
     z-index: 1000;
     top: 0;
@@ -203,52 +206,35 @@ body {
     background-color: rgba(19, 30, 33, 0.4);
 }
 
- .head_image .number {
-    position: absolute;
-    padding: 7px;
-    z-index: 1000;
-    top: 60%;
-    left: -80%;
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 13px;
-    width: 80%;
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -ms-transition: all 0.7s;
-    transition: all 0.7s;
-    visibility: hidden;
-}
 
- .head_image:hover .number {
-    background-color: #1e4944;
-    left: 0px;
-    visibility: visible;
-}
+
+
 
  .head_image .social_id {
     position: absolute;
     justify-content: center;
     padding: 3px;
-    z-index: 1000;
-    top: 61%;
-    right: -85%;
+    /* z-index: 1000; */
+    /* top: 61%; */
+    bottom: -85%;
     margin-top: 25px;
     margin-bottom: 0;
     color: #ffffff;
     font-weight: 300;
     font-size: 1.5rem;
-    width: 80%;
+    width: 100%;
     -webkit-transition: all 0.7s;
     -moz-transition: all 0.7s;
     -ms-transition: all 0.7s;
+    
     transition: all 0.7s;
     visibility: hidden;
 }
 
- .head_image:hover .social_id {
-    background-color: #417c74;
-    right: 0px;
+.head_image:hover .social_id {
+    background-color: transparent;
+    bottom: 25%;
+    /* transform: translateY(0px); */
     visibility: visible;
 }
 .mob_data{
@@ -261,10 +247,6 @@ body {
     .socialmedia-icons{
         color: #000;
     }
-    .head_image .number{
-        top: 40%;
-    }
-    .head_image .social_id{
-        top: 41%;
-    }
+    .head_image:hover .social_id{
+        bottom: 40%;
 }
