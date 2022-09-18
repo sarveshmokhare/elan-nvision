@@ -218,6 +218,7 @@ iframe {
 #section4 h2 {
   padding: 10px 10px;
   font-size: 33px;
+  margin-top: 12px;
 }
 #section4 .Social-stats {
   margin: 5px;
@@ -226,6 +227,12 @@ iframe {
 #section4 i {
   font-size: 32px;
   margin-bottom: 5px;
+}
+#section4 .gen-stats{
+  padding: 0 200px;
+}
+#section4 .outreach{
+  padding: 0 160px;
 }
 .stat {
   font-size: 26px;
