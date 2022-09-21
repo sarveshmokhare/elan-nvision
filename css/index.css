@@ -254,6 +254,12 @@ iframe {
   #section4 .col {
     margin-bottom: 20px;
   }
+  #section4 .gen-stats{
+    padding: 0;
+  }
+  #section4 .outreach{
+    padding: 0;
+  }
 }
 #section4 p {
   margin: 0;
@@ -330,7 +336,7 @@ iframe {
 }
 @media (max-width: 992px) {
   #sponsor {
-    height: 500px;
+    height: 100%;
   }
 }
 
@@ -363,20 +369,25 @@ iframe {
   right: 7rem;
 }
 @media (max-width: 992px) {
-  #sponsor .carousel-control-prev-icon {
-    position: relative;
-    right: 0;
+  #sponsor .sponsor-image img {
+    height: 80px;
+    object-fit: contain;
+    margin: 20px;
+  }
+
+  #sponsor .carousel{
+    width: 100%;
   }
 }
 
-#sponsor .carousel-control-next-icon {
+#sponsor .carousel-control-prev-icon {
   position: relative;
-  left: 7rem;
+  right: 7rem;
 }
 @media (max-width: 992px) {
-  #sponsor .carousel-control-next-icon {
+  #sponsor .carousel-control-prev-icon {
     position: relative;
-    left: 0;
+    right: 0;
   }
 }
 

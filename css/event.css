@@ -135,6 +135,10 @@ body{
   }
 
 }
+.navbar2{
+  width: 100%;
+  justify-content: space-evenly;
+}
 .navbar2 button{
   /* margin: .5rem; */
   margin-right: 1rem;

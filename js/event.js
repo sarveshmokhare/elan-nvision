@@ -13,49 +13,63 @@ var m = 0
 function slide1() {
     culti = document.getElementById("culti")
     techy = document.getElementById("techy")
-    if (!techy.classList.contains("active")) {
-        if (!culti.classList.contains("active")) {
-            culti.classList.add("active")
-            // document.getElementById("techy_btn").style.zIndex = -1
-            document.getElementById("main_page").classList.add("inactive")
-            document.getElementById("image_carousel").style.zIndex = -1;
-            document.getElementById("culti_btn").classList.add("active")
-        }
-        else {
-            culti.classList.remove("active")
-            // document.getElementById("techy_btn").style.zIndex = 10
-            document.getElementById("main_page").classList.remove("inactive")
-            document.getElementById("image_carousel").style.zIndex = 0;
-            document.getElementById("culti_btn").classList.remove("active")
-        }
+    imageCarousel = document.getElementById("image_carousel");
+
+    if (!culti.classList.contains("active")) {
+        culti.classList.add("active");
+        
+        culti.style.zIndex = 1;
+        imageCarousel.style.zIndex = -1;
+        techy.style.zIndex = -1;
+        techy.classList.remove("active");
+    }
+    else if (culti.classList.contains("active") && techy.classList.contains("active")) {
+        culti.classList.remove("active");
+        culti.style.zIndex = -1;
+        
+        imageCarousel.style.zIndex = 1;
+    }
+    else if (culti.classList.contains("active")) {
+        culti.classList.remove("active");
+        
+        imageCarousel.style.zIndex = 1;
+        
     }
 }
 
 function slide2() {
+
+    techy = document.getElementById("techy");
+    culti = document.getElementById("culti");
+    imageCarousel = document.getElementById("image_carousel");
+
+    if (!techy.classList.contains("active")) {
+        techy.classList.add("active");
+
+        techy.style.zIndex = 1;
+        imageCarousel.style.zIndex = -1;
+        culti.style.zIndex = -1;
+        culti.classList.remove("active");
+    }
+    else if (techy.classList.contains("active") && culti.classList.contains("active")) {
+        techy.classList.remove("active");
+        techy.style.zIndex = -1;
     
-    techy = document.getElementById("techy")
-    culti = document.getElementById("culti")
-    if (!culti.classList.contains("active")) {
-        if (!techy.classList.contains("active")) {
-            techy.classList.add("active")
-            // document.getElementById("culti_btn").style.zIndex = -1
-            // document.getElementById("main_page").classList.add("inactive")
-            document.getElementById("image_carousel").style.zIndex = 0;
-        }
-        else {
-            techy.classList.remove("active")
-            // document.getElementById("culti_btn").style.zIndex = 10
-            // document.getElementById("main_page").classList.remove("inactive")
-            document.getElementById("image_carousel").style.zIndex = 0;
-        }
+        imageCarousel.style.zIndex = 1;
+    }
+    else if (techy.classList.contains("active")) {
+        techy.classList.remove("active");
+        
+        imageCarousel.style.zIndex = 1;
+        
     }
 }
 // document.getElementById("vert-navbar").style.width=document.body.clientWidth
 
-function home(){
+function home() {
     techy = document.getElementById("techy")
     culti = document.getElementById("culti")
-    if (techy.classList.contains("active"))techy.classList.remove("active")
-    if (culti.classList.contains("active"))culti.classList.remove("active")
+    if (techy.classList.contains("active")) techy.classList.remove("active")
+    if (culti.classList.contains("active")) culti.classList.remove("active")
     document.getElementById("image_carousel").style.zIndex = 0;
 }

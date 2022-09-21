@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-#for_backcol{
+#for_backcol {
   background-color: #2cb7da;
 }
 
@@ -29,13 +29,13 @@ body {
   background-attachment: fixed; */
   text-align: center;
 }
-#image_carousel{
+#image_carousel {
   z-index: 0;
   max-width: 900px;
   width: 80vw;
-  height:40vw ;
+  height: 40vw;
   overflow: hidden;
-  max-height: 450px;  
+  max-height: 450px;
   margin-bottom: 5rem;
 }
 
@@ -46,19 +46,19 @@ body {
   text-align: center;
   font-size: 5rem;
 }
-.main_heading2{
-  font-family: 'Domine', serif;
-    margin-bottom: 3rem;
+.main_heading2 {
+  font-family: "Domine", serif;
+  margin-bottom: 3rem;
   text-align: center;
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .heading {
   color: white;
-  font-family: 'Tiro Bangla', serif;
+  font-family: "Tiro Bangla", serif;
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
 }
 
 .content {
@@ -67,44 +67,39 @@ body {
   margin-top: 1rem;
 }
 
-@media(min-width:768px){
+@media (min-width: 768px) {
+  #culti.active {
+    animation: comeinright 2s ease;
+    padding-bottom: 3rem;
+    display: flex;
+    z-index: 1;
+  }
+  #techy.active {
+    z-index: 1;
+    display: flex;
+    animation: comeinleft 2s ease;
+  }
+}
 
-
-
-#culti.active{
-  animation: comeinright 2s ease;
-  padding-bottom: 3rem;
-  display: flex;
-}
-#techy.active{
-  z-index: 5;
-  display: flex;
-  animation: comeinleft 2s ease;
-}
-}
-#techy.active{
-  padding-bottom: 3rem;
-}
-.row.active{
+.row.active {
   padding: 0 4rem;
   display: block;
 }
 
-#main_page{
+#main_page {
   background-color: #2cb7da;
-
 }
-#whole_content{
+#whole_content {
   overflow: hidden;
   height: 90%;
   padding: 3rem;
   padding-bottom: 5rem;
   border-radius: 20px;
   background-color: #1e1e65;
-  margin:1rem;
+  margin: 1rem;
 }
 
-#whole img{
+#whole img {
   display: block;
   width: 18rem;
   height: 12rem;
@@ -112,144 +107,166 @@ body {
   object-fit: cover;
   margin: auto;
 }
-@media(max-width:992px){
-  #whole img{
+@media (max-width: 992px) {
+  #whole img {
     width: 24rem;
     height: 14rem;
   }
-  #whole_content{
+  #whole_content {
     height: auto;
   }
-
 }
 
-
-
-@media(max-width:480px){
-  .row.active{
+@media (max-width: 480px) {
+  .row.active {
     padding: 0 2rem;
   }
-  .content{
-    font-size: .8rem;
+  .content {
+    font-size: 0.8rem;
   }
 }
 
 /* footer */
 
-@media(max-width:768px){
-  #whole img{
+@media (max-width: 768px) {
+  #whole img {
     width: 80%;
     height: 50%;
   }
-  #main_heading{
+  #main_heading {
     font-size: 2.5rem;
   }
 
-  #culti.active{
+  #culti.active {
     margin: 0;
     /* width: 100vw; */
     z-index: 1;
     display: flex;
     animation: comeinright2 2s ease;
   }
-  #culti{
+  #culti {
     margin: 0;
     position: absolute;
     /* width: 100vw; */
     display: none;
+    /* z-index: 1; */
   }
-  #techy{
+  #techy {
     position: absolute;
     display: none;
   }
-  #main_page{
+  #main_page {
     position: relative;
   }
-  
-  #techy.active{
+
+  #techy.active {
     z-index: 1;
     display: flex;
     animation: comeinleft2 2s ease;
   }
-  .main_heading2{
+  .main_heading2 {
     font-size: 2.5rem;
   }
-
 }
 
-
-
-
-
-.navbar{
+.navbar {
   position: sticky;
   top: 0;
 }
 
-.navbar2 .container-fluid{
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-evenly;
+.navbar2 .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-#culti_btn{
+#culti_btn {
   color: aliceblue;
   font-size: 1rem;
   font-weight: 900;
-    background-color:#202c6a;
-    z-index: 10;
-    width: 20vw;
-    min-width: 80px;
-    /* position: sticky; */
-    /* top: 0; */
-    /* left: 49vw; */
+  background-color: #202c6a;
+  z-index: 10;
+  width: 20vw;
+  min-width: 80px;
+  /* position: sticky; */
+  /* top: 0; */
+  /* left: 49vw; */
 }
-#techy_btn{
-
+#techy_btn {
   /* left: 41vw; */
   color: aliceblue;
   font-weight: 900;
   width: 20vw;
-  background-color:#202c6a;
+  background-color: #202c6a;
   z-index: 10;
   min-width: 80px;
   /* position: sticky; */
   /* top: 0; */
   /* right: 60vw; */
 }
-#home_btn{
-
+#home_btn {
   /* left: 41vw; */
   color: aliceblue;
   font-weight: 900;
   width: 20vw;
-  background-color:#202c6a;
+  background-color: #202c6a;
   z-index: 10;
   min-width: 80px;
   /* position: sticky; */
   /* top: 0; */
   /* right: 60vw; */
 }
-
 
 @keyframes comeinright {
-  from{top:240px;left:100vw ;display: none;}
-  to {top: 240px;left: 0px;display: flex;}
-} 
- @keyframes comeinleft {
-  from{top:240px;right:100vw ;display: none;}
-  to {top: 240px;right: 0px;display: flex;}
+  from {
+    top: 240px;
+    left: 100vw;
+    display: none;
+  }
+  to {
+    top: 240px;
+    left: 0px;
+    display: flex;
+  }
+}
+@keyframes comeinleft {
+  from {
+    top: 240px;
+    right: 100vw;
+    display: none;
+  }
+  to {
+    top: 240px;
+    right: 0px;
+    display: flex;
+  }
 }
 @keyframes comeinright2 {
-  from{top:180px;left:100vw ;display: none;}
-  to {top: 180px;left: 0px;display: flex;}
+  from {
+    top: 180px;
+    left: 100vw;
+    display: none;
+  }
+  to {
+    top: 180px;
+    left: 0px;
+    display: flex;
+  }
 }
 @keyframes comeinleft2 {
-  from{top:180px;right:100vw ;display: none;}
-  to {top: 180px;right: 0px;display: flex;}
+  from {
+    top: 180px;
+    right: 100vw;
+    display: none;
+  }
+  to {
+    top: 180px;
+    right: 0px;
+    display: flex;
+  }
 }
-#culti{
+#culti {
   right: 0;
   display: none;
   background-color: #2cb7da;
@@ -259,7 +276,7 @@ body {
   background-attachment: fixed;
   position: absolute;
 }
-#techy{
+#techy {
   background-color: #2cb7da;
   /* background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
   background-repeat: no-repeat;
@@ -267,35 +284,35 @@ body {
   background-attachment: fixed;
   position: absolute;
   display: none;
+  padding-bottom: 3rem;
 }
-#main_page{
+#main_page {
   z-index: -1;
   position: relative;
   display: block;
 }
 
-
-@media(max-width:480px){
-  #main_page{
+@media (max-width: 480px) {
+  #main_page {
     position: relative;
   }
-  #culti{
+  #culti {
     right: 0;
     position: absolute;
     display: none;
   }
-  #techy{
+  #techy {
     position: absolute;
     display: none;
   }
-  #culti.active{
+  #culti.active {
     right: 0;
     z-index: 1;
     display: flex;
     animation: comeinright2 2s ease;
   }
-  
-  #techy.active{
+
+  #techy.active {
     z-index: 1;
     display: flex;
     animation: comeinleft2 2s ease;
