@@ -170,34 +170,39 @@ body {
 }
 
 .navbar {
-  position: sticky;
   top: 0;
 }
 
-.navbar2 .container-fluid {
+.navbar2 .nav2{
+  /* background-color: #202c6a; */
+  /* width: 5rem; */
   display: flex;
-  flex-wrap: inherit;
+  /* flex-wrap: inherit; */
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+
 }
 
 #culti_btn {
+  margin-right: 15vw;
   color: aliceblue;
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: 800;
   background-color: #202c6a;
   z-index: 10;
-  width: 20vw;
+  width: 12vw;
   min-width: 80px;
   /* position: sticky; */
   /* top: 0; */
   /* left: 49vw; */
 }
 #techy_btn {
+  margin-left:15vw ;
   /* left: 41vw; */
   color: aliceblue;
-  font-weight: 900;
-  width: 20vw;
+  font-weight: 800;
+  width: 12vw;
   background-color: #202c6a;
   z-index: 10;
   min-width: 80px;
@@ -208,8 +213,8 @@ body {
 #home_btn {
   /* left: 41vw; */
   color: aliceblue;
-  font-weight: 900;
-  width: 20vw;
+  font-weight: 800;
+  width: 12vw;
   background-color: #202c6a;
   z-index: 10;
   min-width: 80px;
@@ -217,6 +222,21 @@ body {
   /* top: 0; */
   /* right: 60vw; */
 }
+@media(max-width:480px){
+  #techy_btn{
+    margin-left: 3vw;
+    font-weight: 500;
+  }
+  #culti_btn{
+    margin-right: 3vw;
+    font-weight: 500;
+    /* padding: .1rem; */
+  }
+  #home_btn{
+    font-weight: 500;
+  }
+}
+
 
 @keyframes comeinright {
   from {
