@@ -66,11 +66,23 @@ body {
 }
 
 #team_section h5 {
-    /* position: absolute; */
-
+    
     font-weight: bold;
 }
-
+@media(max-width:480px){
+    #team_section h5{
+        font-size: 1rem;
+    }
+    #team_section p{
+        font-size: .7rem;
+    }
+    #coord h4{
+        font-size: 1rem;
+    }
+    #coord p{
+        font-size: .8rem;
+    }
+}
 .title1 {
     display: block;
     margin-top: 0.25rem;

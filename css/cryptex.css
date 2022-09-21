@@ -14,66 +14,7 @@ body {
   overflow-x: clip;
 }
 
-.logo {
-  height: 40px;
-}
 
-.logo:hover {
-  transform: scale(1.05);
-  transition: 100ms;
-}
-
-.navbar {
-  background-color: #101820ff;
-  z-index: 10;
-}
-
-.navbar .navbar-nav a {
-  color: #fff;
-  font-size: 1rem;
-}
-
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #fff;
-}
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transform-origin: bottom center;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom center;
-}
-
-.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-  text-decoration: none;
-}
-
-.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-  font-size: 0.8rem;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-@media (max-width: 992px) {
-  .dropdown-menu {
-    text-align: center;
-  }
-}
 
 
 /* .reveal {
@@ -112,7 +53,11 @@ body {
   color: white;
   font-family: "LemonMilk";
 }
-
+@media(max-width:480px){
+  #cryptex h1{
+    font-size: 2rem;
+  }
+}
 #cryptex .para {
   justify-content: center;
   align-items: center;

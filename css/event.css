@@ -59,7 +59,7 @@ body{
     font-size: 5rem;
     margin-bottom: 2rem;
 }
-.col-md-6{
+.content.col-md-6{
   display: block;
 }
 .content{
