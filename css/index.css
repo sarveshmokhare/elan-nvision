@@ -419,9 +419,14 @@ iframe {
 #sponsor .carousel-control-prev:hover {
   cursor: default;
 }
-
+#sponsor .carousel-control-next,
+#sponsor  .carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
 .fa-angle-down {
+
   margin: auto;
+  /* margin-right: 1rem; */
 }
 
 /* navbar cross functionality */
