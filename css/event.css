@@ -29,6 +29,7 @@ body{
 }
 
 .row{
+  /* display: block; */
   align-items: center;
 }
 
@@ -58,15 +59,18 @@ body{
     font-size: 5rem;
     margin-bottom: 2rem;
 }
-
+.col-md-6{
+  display: block;
+}
 .content{
+  display: block;
   font-weight: 500;
   color: white;
     max-width: 95vw;
     width: 40vw;
     text-align: left;
     font-size: 1.4rem;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     align-items: center;
   
 
