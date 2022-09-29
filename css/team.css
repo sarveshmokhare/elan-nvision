@@ -36,17 +36,17 @@ body {
 /* team section*/
 
 #team_section {
-  background-color: #101820ff;
+  /* background-color: #101820ff; */
   background-size: cover;
   height: auto;
   text-align: center;
+  font-family: 'Poppins';
   /* position: relative; */
   color: #000;
 }
 
 #team_section .card {
   /* border: 10px gray !important; */
-  outline: 3px solid gray;
 }
 
 #team_section h1 {
@@ -54,9 +54,9 @@ body {
   display: block;
   position: relative;
   font-size: 5rem;
-  font-family: "LemonMilk";
+  font-family: "Poppins";
   font-weight: bolder;
-  color: white;
+  color: black;
 }
 
 #team_section h5 {
@@ -80,9 +80,8 @@ body {
   display: block;
   margin-top: 0.25rem;
   font-size: 2.25rem;
-  color: white;
+  color: black;
   font-weight: bold;
-  font-family: "LemonMilk";
 }
 
 #team_section .heads {
@@ -150,7 +149,6 @@ body {
   font-size: 2.25rem;
   color: #101820ff;
   font-weight: bold;
-  font-family: "LemonMilk";
 }
 
 #coord .coords {

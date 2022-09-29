@@ -13,7 +13,7 @@ body{
   text-align: center;
   /* overflow-x: hidden; */
   /* background-image: url("./events.jfif"); */
-  background-color: #4158D0;
+  background-color: white;
 /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
 
   background-repeat: no-repeat;
@@ -21,7 +21,6 @@ body{
   background-attachment: fixed;
 }
 #body{
-  background-color: #2591b1;
   text-align: center;
 }
 .carousel-item{
@@ -41,31 +40,33 @@ body{
 }
 
 #main_heading{
-  font-family: "LemonMilk";
-  color: #ffffff;
-  font-size: 7rem;
+  font-family: "Poppins";
+  
+  color: #121212;
+  font-size: 6rem;
   padding:0;
   margin: 0;
 }
+
 .events{
   
     text-align: center;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 3.125rem;
     /* padding: 0 10px; */
 }
 .heading{
-  color: white;
+  color: black;
     font-size: 5rem;
-    margin-bottom: 2rem;
 }
 .content.col-md-6{
   display: block;
+  padding-top: 24px;
 }
 .content{
   display: block;
   font-weight: 500;
-  color: white;
+  color: black;
     max-width: 95vw;
     width: 40vw;
     text-align: left;
@@ -84,16 +85,26 @@ body{
     }
 
 }
+
+@media(min-width: 769px){
+
+  .full_content{
+    padding-top: 1rem;
+  }
+}
+
 @media(max-width:768px){
   #vert-navbar button{
     font-size: 1rem;
   }
+
+
   #main_heading{
-    font-size: 5rem;
+    font-size: 4rem;
   }
     .heading{
         font-size: 3rem;
-        margin-bottom: 50px;
+        padding: 1rem;
     }
     .content{
         font-size: 1rem;
@@ -120,11 +131,11 @@ body{
     padding-bottom: 50px;
     position: relative;
     display: none;
-    animation: getout 2s ease;
+    animation: getout 1s ease;
 }
 @media(max-width:992px){
     .events{
-      padding:0 50px;
+      padding:0 50px !important;
       margin-right: 0 50px;
     }
 }
@@ -153,20 +164,20 @@ body{
 .events.active{
   opacity: 1;
     display: block;
-    animation: comein 2s ease-in-out;
+    animation: comein 0.5s ease-in-out;
 }
 .events.inactive{
     display: block;
-    animation:getout 2s ease-in ;
+    animation:getout 0.3s ease-in ;
 }
 
 @keyframes comein {
-    from{top: 0px;left:50vw ;opacity: 0;}
-    to {top: 0px;left: 0px;opacity: 1;}
+    from{transform: translateX(20px) ;opacity: 0;}
+    to {transform: translateX(0);opacity: 1;}
 }
 @keyframes getout{
-    from{top: 0px;left:0vw ;display: block;}
-    to {top: 0px;left: -100vw;display: none;}
+    from{transform: translateX(0) ;display: block;}
+    to {transform: translateX(-20px);display: none;}
 }
 
 

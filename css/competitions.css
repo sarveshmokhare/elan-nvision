@@ -41,13 +41,14 @@ body {
 
 #main_heading {
   /* margin-top: 2rem; */
-  font-family: "LemonMilk";
-
+  /* font-family: "LemonMilk"; */
+  font-family: 'Poppins';
+  font-weight: ;
   text-align: center;
   font-size: 5rem;
 }
 .main_heading2 {
-  font-family: "Domine", serif;
+  font-family: 'Poppins';
   margin-bottom: 3rem;
   text-align: center;
   font-size: 4rem;
@@ -55,7 +56,8 @@ body {
 
 .heading {
   color: white;
-  font-family: "Tiro Bangla", serif;
+  font-family: 'Poppins';
+  font-weight: semibold;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
