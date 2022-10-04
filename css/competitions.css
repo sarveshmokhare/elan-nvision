@@ -70,7 +70,7 @@ body {
 
 @media (min-width: 768px) {
   #culti.active {
-    animation: comeinright 2s ease;
+    animation: comeinright 1.9s ease;
     padding-bottom: 3rem;
     display: flex;
     z-index: 1;
@@ -78,7 +78,17 @@ body {
   #techy.active {
     z-index: 1;
     display: flex;
-    animation: comeinleft 2s ease;
+    animation: comeinleft 1.9s ease;
+  }
+  #culti.inactive{
+    display: flex;
+    animation: getoutright 2s ease;
+    left:100vw;
+  }
+  #techy.inactive{
+    display: flex;
+    animation: getoutleft 2s ease;
+    right: 100vw;
   }
 }
 
@@ -140,7 +150,6 @@ body {
 
   #culti.active {
     margin: 0;
-    /* width: 100vw; */
     z-index: 1;
     display: flex;
     animation: comeinright2 2s ease;
@@ -167,6 +176,16 @@ body {
   }
   .main_heading2 {
     font-size: 2.5rem;
+  }
+  #culti.inactive{
+    display: flex;
+    animation: getoutright2 2s ease;
+    left:100vw;
+  }
+  #techy.inactive{
+    display: flex;
+    animation: getoutleft2 2s ease;
+    right: 100vw;
   }
 }
 
@@ -241,49 +260,97 @@ body {
 
 @keyframes comeinright {
   from {
-    top: 240px;
+    top: 238px;
     left: 100vw;
     display: none;
   }
   to {
-    top: 240px;
+    top: 238px;
     left: 0px;
     display: flex;
   }
 }
 @keyframes comeinleft {
   from {
-    top: 240px;
+    top: 238px;
     right: 100vw;
     display: none;
   }
   to {
-    top: 240px;
+    top: 238px;
     right: 0px;
     display: flex;
   }
 }
 @keyframes comeinright2 {
   from {
-    top: 180px;
+    top: 178px;
     left: 100vw;
     display: none;
   }
   to {
-    top: 180px;
+    top: 178px;
     left: 0px;
     display: flex;
   }
 }
 @keyframes comeinleft2 {
   from {
-    top: 180px;
+    top: 178px;
     right: 100vw;
     display: none;
   }
   to {
-    top: 180px;
+    top: 178px;
     right: 0px;
+    display: flex;
+  }
+}
+@keyframes getoutright {
+  from {
+    top: 238px;
+    left: 0vw;
+    display: flex;
+  }
+  to {
+    top: 238px;
+    left: 100vw;
+    display: flex;
+  }
+}
+@keyframes getoutleft {
+  from {
+    top: 238px;
+    right: 0;
+    display: flex;
+  }
+  to {
+    top: 238px;
+    right: 100vw;
+    display: flex;
+  }
+}
+@keyframes getoutright2 {
+  from {
+    top: 178px;
+    left: 0vw;
+    display: flex;
+  }
+  to {
+    top: 178px;
+    left: 100wv;
+    display: flex;
+  }
+}
+@keyframes getoutleft2 {
+  from {
+    top: 178px;
+    right: 0vw;
+    display: flex;
+  }
+  to {
+    top: 178px;
+    right: 100vw;
     display: flex;
   }
 }
@@ -305,7 +372,20 @@ body {
   background-attachment: fixed;
   position: absolute;
   display: none;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
+}
+/* #culti.inactive{
+  display: flex;
+  animation: getoutright 2s ease;
+  left:100vw;
+}
+#techy.inactive{
+  display: flex;
+  animation: getoutleft 2s ease;
+  right: 100vw;
+} */
+#footer{
+  overflow-y: hidden;
 }
 #main_page {
   z-index: -1;
@@ -318,9 +398,12 @@ body {
     position: relative;
   }
   #culti {
-    right: 0;
+    right: -100vw;
+    transition: 2s;
+    /* right: 0; */
+    opacity: 0;
     position: absolute;
-    display: none;
+    /* display: none; */
   }
   #techy {
     position: absolute;
@@ -329,6 +412,7 @@ body {
   #culti.active {
     right: 0;
     z-index: 1;
+    opacity: 1;
     display: flex;
     animation: comeinright2 2s ease;
   }
@@ -337,6 +421,16 @@ body {
     z-index: 1;
     display: flex;
     animation: comeinleft2 2s ease;
+  }
+  #culti.inactive{
+    display: flex;
+    animation: getoutright2 2s ease;
+    left:100vw;
+  }
+  #techy.inactive{
+    display: flex;
+    animation: getoutleft2 2s ease;
+    right: 100vw;
   }
 }
 
