@@ -70,8 +70,13 @@
 .potrait #socialmedia{
   text-align: left;
 }
-#footer .potrait{
-  display: none;
+@media(min-width:768px){
+  #footer .potrait{
+    display: none;
+  }
+  #footer .landscape{
+    display: block;
+  }
 }
 
 
