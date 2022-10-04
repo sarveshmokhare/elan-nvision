@@ -28,6 +28,7 @@
   #footer .row{
     height: auto;
   }
+
   #contactus{
     text-align: left;
   }
@@ -53,10 +54,11 @@
     margin: auto;
     text-align: left;
   }
-  #footer .potrait
+
 .col-md-6{
+  /* text-align: center; */
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
 }
 
