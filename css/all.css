@@ -91,6 +91,9 @@
     display: block;
   }
 }
+#footer .landscape{
+  margin-top: 15px;
+}
 #footer .landscape .footer-logo {
 
   margin: auto;

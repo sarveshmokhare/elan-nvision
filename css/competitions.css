@@ -3,9 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-#for_backcol {
-  background-color: #2cb7da;
-}
+
 
 :root {
   --main-bg-color: #f7b219;
@@ -44,6 +42,7 @@ body {
   /* font-family: "LemonMilk"; */
   font-family: 'Poppins';
   text-align: center;
+  font-weight:bold;
   font-size: 5rem;
 }
 .main_heading2 {
@@ -51,6 +50,7 @@ body {
   margin-bottom: 3rem;
   text-align: center;
   font-size: 4rem;
+  font-weight: bold;
 }
 
 .heading {
@@ -70,7 +70,7 @@ body {
 
 @media (min-width: 768px) {
   #culti.active {
-    animation: comeinright 1.9s ease;
+    /* animation: comeinright 1.9s ease; */
     padding-bottom: 3rem;
     display: flex;
     z-index: 1;
@@ -78,16 +78,16 @@ body {
   #techy.active {
     z-index: 1;
     display: flex;
-    animation: comeinleft 1.9s ease;
+    /* animation: comeinleft 1.9s ease; */
   }
   #culti.inactive{
     display: flex;
-    animation: getoutright 2s ease;
+    /* animation: getoutright 2s ease; */
     left:100vw;
   }
   #techy.inactive{
     display: flex;
-    animation: getoutleft 2s ease;
+    /* animation: getoutleft 2s ease; */
     right: 100vw;
   }
 }
@@ -97,9 +97,7 @@ body {
   display: block;
 }
 
-#main_page {
-  background-color: #2cb7da;
-}
+
 #whole_content {
   overflow: hidden;
   height: 90%;
@@ -152,7 +150,7 @@ body {
     margin: 0;
     z-index: 1;
     display: flex;
-    animation: comeinright2 2s ease;
+    /* animation: comeinright2 2s ease; */
   }
   #culti {
     margin: 0;
@@ -172,19 +170,20 @@ body {
   #techy.active {
     z-index: 1;
     display: flex;
-    animation: comeinleft2 2s ease;
+    /* animation: comeinleft2 2s ease; */
   }
   .main_heading2 {
     font-size: 2.5rem;
+    font-weight:bold;
   }
   #culti.inactive{
     display: flex;
-    animation: getoutright2 2s ease;
+    /* animation: getoutright2 2s ease; */
     left:100vw;
   }
   #techy.inactive{
     display: flex;
-    animation: getoutleft2 2s ease;
+    /* animation: getoutleft2 2s ease; */
     right: 100vw;
   }
 }
@@ -357,7 +356,7 @@ body {
 #culti {
   right: 0;
   display: none;
-  background-color: #2cb7da;
+  background-color: #ffffff;
   /* background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -365,7 +364,7 @@ body {
   position: absolute;
 }
 #techy {
-  background-color: #2cb7da;
+  background-color: #ffffff;
   /* background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -414,22 +413,22 @@ body {
     z-index: 1;
     opacity: 1;
     display: flex;
-    animation: comeinright2 2s ease;
+    /* animation: comeinright2 2s ease; */
   }
 
   #techy.active {
     z-index: 1;
     display: flex;
-    animation: comeinleft2 2s ease;
+    /* animation: comeinleft2 2s ease; */
   }
   #culti.inactive{
     display: flex;
-    animation: getoutright2 2s ease;
+    /* animation: getoutright2 2s ease; */
     left:100vw;
   }
   #techy.inactive{
     display: flex;
-    animation: getoutleft2 2s ease;
+    /* animation: getoutleft2 2s ease; */
     right: 100vw;
   }
 }
