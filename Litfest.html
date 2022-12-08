@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Litfest</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/Litfest.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+
+    <!-- Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/236067a8df.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar  navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="images/elan_logo.png" alt="elan_logo"></a>
+            <button class="navbar-toggler d-flex d-lg-none flex-column justify-content-around collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                onclick="on_off()">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link " href="./index.html" aria-expanded="false">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link " href="./event.html" aria-expanded="false">
+                            Events
+                        </a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="./Litfest.html" aria-expanded="false">
+                            Litfest
+                        </a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="./competitions.html" aria-expanded="false">
+                            Competitions
+                        </a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="https://ca.elan.org.in/" aria-expanded="false" target="_blank">
+                            CA Portal
+                        </a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="./cryptex.html">Cryptex</a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="./social_cause.html">Social Cause</a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="./team.html">Team</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- <nav class="navbar navbar2 sticky-top bg-warning">
+        <div class="nav2 container-fluid">
+            <button id="techy_btn" class="btn" onclick="slide2()">TECHY</button>
+            <button id="home_btn" type="button" class="btn" onclick="home()">HOME</button>
+            <button id="culti_btn" type="button" class="btn" onclick="slide1()">CULTI</button>
+
+        </div>
+    </nav>
+    <div id="buttons"> </div> -->
+
+    <div id="main_page">
+
+        <div id="main_heading">
+            LITFEST
+        </div>
+        
+
+
+    </div>
+    <a href="#"><button class="Rgs_button">REGISTER HERE</button></a>
+
+    
+
+    <div id="whole">
+        <div id="Litfest" class="row g-0">
+            <!-- <div class="main_heading2">CULTI</div> -->
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">INKED VERSES</div>
+                    <img src="./Litfest_Posters/square-01.png" alt="campus idol">
+                    <div class="content">The prompt would be a short video clip (~3-5 min long).The contestants are expected to watch the entire clip and then write a poem that is inspired from it. The inspiration could be the story of the clip itself, the message it conveys, the kind of emotions it stirs up in the viewers’ hearts or any such thing.
+
+                    </div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">THIS OR THAT</div>
+                    <img src="./Litfest_Posters/square-04.png" alt="breakfree">
+                    <div class="content">A set of 5 silly “this or that” topics (eg: Captain America or Iron Man, Call or Text) would be given.The contestants are required to pick one and write a satirical yet persuasive essay on why one is better than the other alternative.</div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">IT'S 2032</div>
+                    <img src="./Litfest_Posters/square-07.png" alt="stand up comedy">
+                    <div class="content">The contestants are to imagine it's the year 2032 and make a diary entry</div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">WHAT IF?</div>
+                    <img src="./Litfest_Posters/square-02.png" alt="doodle creation">
+                    <div class="content"> A fanfiction writing contest where the contestants will have to create a crossover of two different fictional universes. However, they are limited to picking only one character and one other universe.In their story they are to speculate how things in that universe would have turned out if the character they had chosen were present in it. 
+                    </div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">TWO-LINE TERROR</div>
+                    <img src="./Litfest_Posters/square-05.png" alt="glitz and glamour">
+                    <div class="content">Write a two-liner that sends chills down the spine of the reader.</div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">WEEKLY CROSSWORD</div>
+                    <img src="./Litfest_Posters/square-03.png" alt="paint the screen">
+                    <div class="content">Weekly crossword puzzles based on books and literature to tease your brain.
+                    </div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">WEEKLY WORD GAMES</div>
+                    <img src="./Litfest_Posters/square-06.png" alt="art attack">
+                    <div class="content">(Invisible Bridges, Ramblers etc) - Via Instagram</div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">SHIPWRECK</div>
+                    <img src="./Litfest_Posters/square-08.png" alt="filmfare fiesta">
+                    <div class="content"> Just a typical shipwreck but conducted online.</div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">HAIKU WITH A TWIST</div>
+                    <img src="./Litfest_Posters/square-10.png" alt="picelectic">
+                    <div class="content"> The contestants are to coin one brand-new word themselves and include it in their haiku. The word should capture a meaning that no other word in the English lexicon does. And they obviously ought to mention what that meaning is below their haiku.Otherwise, a quintessential  haiku writing contest.
+                    </div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">FLASH FICTION</div>
+                    <img src="./Litfest_Posters/square-11.png" alt="nrityangali">
+                    <div class="content">A cryptic prompt would be given, typically one that can be interpreted in 3-4 ways and the contestants are expected to write a short story based on what they could decipher from the prompt.
+                    </div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="whole_content">
+                    <div class="heading">THAT'S WHAT THEY MEANT?</div>
+                    <img src="./Litfest_Posters/square-09.png" alt="nrityangali">
+                    <div class="content"> Contestants are to choose one song and interpret the meaning of its lyrics. It’s not limited to capturing the right meaning.The contestants can get as creative/quirky as they could with their interpretation. 
+
+                    </div>
+                    <a href="#"><button class="register">Learn More</button></a>
+                </div>
+            </div>
+        </div>
+
+
+       
+
+        
+       
+            
+    </div>
+
+    <div id="for_backcol">
+        
+
+
+        <div id="footer">
+            <div class="container landscape">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="socialmedia">
+    
+                            <a class="footer-logo" href="./index.html"><img class="footer-logo"
+                                    src="./images/elan_logo_footer.png" alt="elan_nvision"></a>
+    
+                            <div class="icons">
+    
+                                <a class="socialmedia-icons" href="https://www.instagram.com/elan_nvision.iith/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+    
+                                <a class="socialmedia-icons" href="https://www.youtube.com/user/ElanIITHyderabad"><i
+                                        class="fa-brands fa-youtube"></i></a>
+    
+                                <a class="socialmedia-icons" href="https://www.linkedin.com/company/elan-nvision-iith/"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+    
+                                <a class="socialmedia-icons" href="https://www.facebook.com/elan.iithyderabad"><i
+                                        class="fa-brands fa-facebook"></i></a>
+    
+                                <a class="socialmedia-icons" href="https://twitter.com/elan_nvision"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            FOLLOW US
+                        </div>
+    
+                    </div>
+                    <div class="col-md-6">
+                        <div id="contactus">
+                            <h5>CONTACT US</h5>
+                            <p>
+                                <!--  -->
+                                Swapnish Sahare, Overall Coordinator <br>
+                                <em>(+91) 78218 25892 </em>
+                                <br> <br>
+                                K N Vardhan, Head of Public Relations
+                                <br>
+                                <em>(+91) 96527 93113</em> <br>
+                                <br>
+                                Email us at :<a href="mailto:elan@iith.ac.in">elan@iith.ac.in</a>
+    
+    
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+            
+            <div class="container potrait">
+                <div id="socialmedia">
+    
+                    <a class="footer-logo" href="./index.html"><img class="footer-logo"
+                            src="./images/elan_logo_footer.png" alt="elan_nvision"></a>
+    
+                    <div class="icons">
+    
+                        <a class="socialmedia-icons" href="https://www.instagram.com/elan_nvision.iith/"><i
+                                class="fa-brands fa-instagram"></i></a>
+    
+                        <a class="socialmedia-icons" href="https://www.youtube.com/user/ElanIITHyderabad"><i
+                                class="fa-brands fa-youtube"></i></a>
+    
+                        <a class="socialmedia-icons" href="https://www.linkedin.com/company/elan-nvision-iith/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+    
+                        <a class="socialmedia-icons" href="https://www.facebook.com/elan.iithyderabad"><i
+                                class="fa-brands fa-facebook"></i></a>
+    
+                        <a class="socialmedia-icons" href="https://twitter.com/elan_nvision"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    FOLLOW US
+                </div>
+                <div id="contactus">
+                    <h5>CONTACT US</h5>
+                    <p>
+                        <!--  -->
+                        Swapnish Sahare, Overall Coordinator <br>
+                        <em>(+91) 78218 25892 </em>
+                        <br> <br>
+                        K N Vardhan, Head of Public Relations
+                        <br>
+                        <em>(+91) 96527 93113</em> <br>
+                        <br>
+                        Email us at :<a href="mailto:elan@iith.ac.in">elan@iith.ac.in</a>
+    
+    
+                    </p>
+                </div>
+            </div>
+            <p id="copyright">&copy 2022. All rights reserved. <br>Elan & ηVision</p>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+        <script src="./js/event.js"></script>
+</body>
+
+</html>
