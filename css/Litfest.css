@@ -27,6 +27,9 @@
     background-attachment: fixed; */
     text-align: center;
   }
+  #whole{
+    background-color: #F3EFE0;
+  }
   #image_carousel {
     z-index: 0;
     max-width: 900px;
@@ -104,7 +107,7 @@
     padding: 3rem;
     padding-bottom: 5rem;
     border-radius: 20px;
-    background-color: #1e1e65;
+    background-color: #22A39F;
     margin: 1rem;
   }
   
@@ -126,6 +129,10 @@
     }
     .row{
         padding: 0 0.5rem;
+    }
+    .Rgs_button{
+      font-size: 0.70rem;
+      
     }
   }
   
@@ -213,10 +220,10 @@
     color: aliceblue;
     background-color: #DF0334;
     border: none;
-    width: 10%;
+    width: 15%;
     /* height: 10%; */
     margin-top: 1rem;
-    margin-left: 45%;
+    margin-left: 43%;
     
 
   }
