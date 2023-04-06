@@ -12,6 +12,8 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/event.css">
     <link rel="stylesheet" href="./css/all.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
 
 
     <!-- Fontawesome CDN -->
@@ -30,7 +32,7 @@
 <body>
     <nav class="navbar  navbar-dark bg-dark navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="images/elan_logo.png" alt="elan_logo"></a>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo_white.png" alt="elan_logo"></a>
             <button class="navbar-toggler d-flex d-lg-none flex-column justify-content-around collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -92,40 +94,34 @@
         </div>
     </nav>
 
-    <!-- <nav class="navbar bg-secondary">
-        <div class="container-fluid">
-          <div class="nav navbar-nav navbar-right">
-              <button class="btn btn-primary navbar-btn" onclick="slide('home')">Home</button>
-              <button class="btn btn-primary navbar-btn" onclick="slide('pronites')">Pronites</button>
-              <button class="btn btn-primary navbar-btn" onclick="slide('culti')">Culti</button>
-              <button class="btn btn-primary navbar-btn" onclick="slide('techy')">Techy</button>
-              <button class="btn btn-primary navbar-btn" onclick="slide('workshop')">Workshops</button>
-        </div>
-        </div>
-      </nav> -->
-
 
 
     <div id="body">
 
-        <!-- <ul id="vert-navbar">
-                <button id="home_btn" onclick="slide('home')">Home</button>
-                <button id="pronites_btn" onclick="slide('pronites')">Pronites</button>
-                <button id="culti_btn" onclick="slide('culti')">Culti</button>
-                <button id="techy_btn" onclick="slide('techy')">Techy</button>
-                <button id="workshop_btn" onclick="slide('workshop')">Workshops</button>
 
-
-            </ul> -->
-
-
-        <div id="home" class="home events container-fluid">
+        <div id="home" class="home events mx-2 sm:mx-5">
             <div id="main_heading">EVENTS</div>
-            <div id="event_carousel" class=" carousel slide other" data-bs-ride="carousel">
+
+            <div id="championship">
+                <img src="./images/robotics_coding.jpeg" alt="">
+                <p class="text-2xl sm:text-3xl">NATIONAL LEVEL CHAMPIONSHIP ON ROBOTICS AND CODING</p>
+                <p class="text-2xl sm:text-3xl m-auto mb-3 mt-5">Topics</p>
+                <ul class="text-left m-auto w-fit leading-8 mb-5 list-disc">
+                
+                    <li>Line Follower Robotics Championship</li>
+                    <li>Mini Humanoid Robotics Championship</li>
+                    <li>Innovation Challenge
+                    </li>
+                    <li>Coding Hackathons
+                    </li>
+                </ul>
+                <a href="https://championship.techradiance.in/" target="_blank"
+                    class="text-xl mt-5 py-[.5rem] px-2 bg-[#216C9D] rounded text-white">Register Here</a>
+            </div>
+            
 
 
-
-
+            <!-- <div id="event_carousel" class=" carousel slide other" data-bs-ride="carousel">
 
 
                 <div class="carousel-indicators">
@@ -183,7 +179,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </div> -->
         </div>
 
         <div id="pronites" class="pronites events">
@@ -421,7 +417,7 @@
                         <div id="socialmedia">
     
                             <a class="footer-logo" href="./index.html"><img class="footer-logo"
-                                    src="./images/elan_logo_footer.png" alt="elan_nvision"></a>
+                                    src="./images/logo_white.png" alt="elan_nvision"></a>
     
                             <div class="icons">
     
@@ -472,7 +468,7 @@
                 <div id="socialmedia">
     
                     <a class="footer-logo" href="./index.html"><img class="footer-logo"
-                            src="./images/elan_logo_footer.png" alt="elan_nvision"></a>
+                            src="./images/logo_white.png" alt="elan_nvision"></a>
     
                     <div class="icons">
     

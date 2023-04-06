@@ -77,7 +77,42 @@ body{
 
 }
 
-
+#championship img{
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1.25rem;
+}
+#championship p{
+  font-size: 1.5rem;
+}
+#championship ul{
+  text-align: left;
+  margin: auto;
+  width: fit-content;
+  line-height: 2rem;
+  margin-bottom: 1.25rem;
+  list-style-type: disc;
+}
+#championship a{
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+  padding: .5rem .5rem;
+  background-color: #216C9D;
+  border-radius: .25rem;
+  color: white;
+  text-decoration: none;
+  
+}
+@media(min-width: 640px){
+  #championship p{
+    font-size: 1.875rem;
+  }
+}
+@media(min-width: 1024px){
+  #championship img{
+    width: 60rem;
+  }
+}
 
 @media (max-width: 992px) {
     .content{
@@ -135,7 +170,7 @@ body{
 }
 @media(max-width:992px){
     .events{
-      padding:0 50px !important;
+      /* padding:0 50px !important; */
       margin-right: 0 50px;
     }
 }

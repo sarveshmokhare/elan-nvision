@@ -97,6 +97,7 @@
 #footer .landscape .footer-logo {
 
   margin: auto;
+  margin-bottom: 1.5rem;
 }
 /* #footer .potrait .footer-logo{
 
@@ -104,6 +105,7 @@
 #footer .footer-logo{
   display: block;
   height: 7rem;
+  margin-bottom: 1.5rem;
   /* width: auto; */
 }
 #footer .footer-logo img{
@@ -170,7 +172,9 @@
       text-align: center;
     }
   }
-  
+  .nav-link{
+    color: #fff !important;
+  }
 
   
 .navbar-toggler {
@@ -186,6 +190,7 @@
   z-index: 0;
   border-radius: 5px;
 }
+
 
 /* .navbar-toggler:before {
   content: '';
