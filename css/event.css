@@ -330,3 +330,13 @@ body{
   z-index: 0;
   border-radius: 5px;
 }
+
+.workshop-list{
+  margin: 2rem 5rem;
+}
+
+@media(max-width:768px) {
+  .workshop-list{
+    margin: 2rem .5rem;
+  }
+}
