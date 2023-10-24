@@ -1,5 +1,10 @@
 active = document.getElementsByClassName("home")[0];
 active.classList.add("active")
+document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash === "#workshop") {
+        slide('workshop'); // Call the slide1 function when the workshop section is loaded
+    }
+});
 function slide(page) {
     preactive = active
     preactive.classList.remove("active")
