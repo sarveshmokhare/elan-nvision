@@ -299,6 +299,52 @@ body{
 }
 
 
+/* workshop styles */
+.workshop-list {
+  text-align: center;
+  margin: 50px;
+}
+
+.workshop-details {
+  border: 2px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.workshop-details h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.workshop-details h2 {
+  font-size: 2rem;
+}
+
+.workshop-details h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.workshop-details .button-register-workshops {
+  margin-top: 20px;
+}
+.workshop-detais p {
+  font-size:1.2rem;
+  margin-top:15px;
+}
+
+.workshop-event-list {
+  list-style-type: none;
+  margin:6px 0 6px 18%;
+  text-align: left;
+}
+/*  */
+.workshop-event-list li {
+  margin: 10px 0;
+}
+
 
 .navbar button:hover {
   box-shadow: rgba(103, 103, 103, 0.35) 0 -20px 18px -14px inset,rgba(10, 36, 20, 0.25) 0 1px 2px,rgba(8, 24, 14, 0.25) 0 2px 4px,rgba(3, 23, 11, 0.25) 0 4px 8px,rgba(1, 18, 8, 0.25) 0 8px 10px,rgba(9, 41, 22, 0.25) 0 10px 20px;
